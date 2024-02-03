@@ -1,0 +1,39 @@
+{
+  // ********************************************************************************
+  // python
+  // ********************************************************************************
+  "[python]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": false,
+    "editor.formatOnType": false,
+    "editor.formatOnSaveMode": "file",
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.codeActionsOnSave": {
+      // 保存時に実行する
+      "source.fixAll": "always", // (登録した)fixAllを実行。
+      // "source.fixAll.ruff": "always", // ruffのfixAllを明示的に使用。
+      "source.organizeImports": "always" // (登録した)organizeImportsを実行。
+      // "source.organizeImports.ruff": "always" //ruffのorganizeImportsを明示的に使用。
+    }
+  },
+  "ruff.organizeImports": false,
+  "ruff.lint.args": ["--config=pyproject.toml"],
+  "ruff.format.args": ["--config=pyproject.toml"],
+  // ********************************************************************************
+  // json
+  // ********************************************************************************
+  "[json]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": false,
+    "editor.formatOnType": false,
+    "editor.formatOnSaveMode": "file",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+      // 保存時に実行する
+      "source.fixAll": "always", // (登録した)fixAllを実行。
+      // "source.fixAll.ruff": "always", // ruffのfixAllを明示的に使用。
+      "source.organizeImports": "always" // (登録した)organizeImportsを実行。
+      // "source.organizeImports.ruff": "always" //ruffのorganizeImportsを明示的に使用。
+    }
+  },
+}

@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "kamilturek.vscode-pyproject-toml-snippets",
+    "charliermarsh.ruff",
+    "esbenp.prettier-vscode"
+  ]
+}
