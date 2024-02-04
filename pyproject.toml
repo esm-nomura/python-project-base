@@ -19,11 +19,14 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.ruff]
+# TODO 以下の内容は【かなり】見直す必要あり
 # Enable pycodestyle (`E`) and Pyflakes (`F`) codes by default.
 select = [
     "ALL", 
 ]
 ignore = [
+    "D",    # Docstringを書かなくてもよいようにする
+    "T201", # 'print()'を使えるようにする
     "E501", # line too long, handled by black
     "B008", # do not perform function calls in argument defaults
     "C901", # too complex

@@ -4,6 +4,7 @@
     "ms-python.vscode-pylance",
     "kamilturek.vscode-pyproject-toml-snippets",
     "charliermarsh.ruff",
-    "esbenp.prettier-vscode"
+    "esbenp.prettier-vscode",
+    "Gruntfuggly.todo-tree"
   ]
 }

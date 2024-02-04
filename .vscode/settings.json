@@ -1,5 +1,11 @@
 {
   // ********************************************************************************
+  // ファイル
+  // ********************************************************************************
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  // ********************************************************************************
   // python
   // ********************************************************************************
   "[python]": {
@@ -7,14 +13,7 @@
     "editor.formatOnPaste": false,
     "editor.formatOnType": false,
     "editor.formatOnSaveMode": "file",
-    "editor.defaultFormatter": "charliermarsh.ruff",
-    "editor.codeActionsOnSave": {
-      // 保存時に実行する
-      "source.fixAll": "always", // (登録した)fixAllを実行。
-      // "source.fixAll.ruff": "always", // ruffのfixAllを明示的に使用。
-      "source.organizeImports": "always" // (登録した)organizeImportsを実行。
-      // "source.organizeImports.ruff": "always" //ruffのorganizeImportsを明示的に使用。
-    }
+    "editor.defaultFormatter": "charliermarsh.ruff"
   },
   "ruff.organizeImports": false,
   "ruff.lint.args": ["--config=pyproject.toml"],
@@ -22,18 +21,36 @@
   // ********************************************************************************
   // json
   // ********************************************************************************
-  "[json]": {
+  "[json][jsonc]": {
     "editor.formatOnSave": true,
     "editor.formatOnPaste": false,
     "editor.formatOnType": false,
     "editor.formatOnSaveMode": "file",
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.codeActionsOnSave": {
-      // 保存時に実行する
-      "source.fixAll": "always", // (登録した)fixAllを実行。
-      // "source.fixAll.ruff": "always", // ruffのfixAllを明示的に使用。
-      "source.organizeImports": "always" // (登録した)organizeImportsを実行。
-      // "source.organizeImports.ruff": "always" //ruffのorganizeImportsを明示的に使用。
-    }
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  // ********************************************************************************
+  // Todo Tree
+  // ********************************************************************************
+  "todo-tree.general.tags": ["FIXME", "NOTE", "TODO", "CHECK"],
+  "todo-tree.highlights.defaultHighlight": {
+    "gutterIcon": true
+  },
+  "todo-tree.highlights.customHighlight": {
+    "FIXME": {
+      "foreground": "#000000",
+      "background": "#ffffff"
+    },
+    "NOTE": {
+      "foreground": "#000000",
+      "background": "#ffffff"
+    },
+    "TODO": {
+      "foreground": "#000000",
+      "background": "#ffffff"
+    },
+    "CHECK": {
+      "foreground": "#ffffff",
+      "background": "#00bfff"
+    }
+  }
 }

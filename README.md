@@ -170,14 +170,7 @@ source $HOME/.zshrc
     "editor.formatOnPaste": false,
     "editor.formatOnType": false,
     "editor.formatOnSaveMode": "file",
-    "editor.defaultFormatter": "charliermarsh.ruff",
-    "editor.codeActionsOnSave": {
-      // 保存時に実行する
-      "source.fixAll": "always", // (登録した)fixAllを実行。
-      // "source.fixAll.ruff": "always", // ruffのfixAllを明示的に使用。
-      "source.organizeImports": "always" // (登録した)organizeImportsを実行。
-      // "source.organizeImports.ruff": "always" //ruffのorganizeImportsを明示的に使用。
-    }
+    "editor.defaultFormatter": "charliermarsh.ruff"
   },
   "ruff.organizeImports": false,
   "ruff.lint.args": ["--config=pyproject.toml"],
@@ -185,20 +178,13 @@ source $HOME/.zshrc
   // ********************************************************************************
   // json
   // ********************************************************************************
-  "[json]": {
+  "[json][jsonc]": {
     "editor.formatOnSave": true,
     "editor.formatOnPaste": false,
     "editor.formatOnType": false,
     "editor.formatOnSaveMode": "file",
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.codeActionsOnSave": {
-      // 保存時に実行する
-      "source.fixAll": "always", // (登録した)fixAllを実行。
-      // "source.fixAll.ruff": "always", // ruffのfixAllを明示的に使用。
-      "source.organizeImports": "always" // (登録した)organizeImportsを実行。
-      // "source.organizeImports.ruff": "always" //ruffのorganizeImportsを明示的に使用。
-    }
-  },
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
 ```
 
@@ -230,13 +216,15 @@ source $HOME/.zshrc
 
 ```json
 {
-    "recommendations": [
-        "ms-python.python",
-        "ms-python.vscode-pylance",
-        "charliermarsh.ruff",
-        "esbenp.prettier-vscode"
-    ]
+  "recommendations": [
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "kamilturek.vscode-pyproject-toml-snippets",
+    "charliermarsh.ruff",
+    "esbenp.prettier-vscode"
+  ]
 }
+
 ```
 
 ## 7. 開発環境のテスト
